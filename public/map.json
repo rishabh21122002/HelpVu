@@ -1,0 +1,192 @@
+{
+    "data":[
+        {
+            "name": "Mumbai",
+            "state": "Andaman and Nicobar Islands",
+            "lat": "11.66702557",
+            "lon": "92.73598262"
+        },    {
+            "name": "Mumbai",
+            "state": "Andhra Pradesh",
+            "lat": "14.7504291",
+            "lon": "78.57002559"
+        },    {
+            "name": "Mumbai",
+            "state": "Arunachal Pradesh",
+            "lat": "27.10039878",
+            "lon": "93.61660071"
+        },    {
+            "name": "Mumbai",
+            "state": "Assam",
+            "lat": "26.7499809",
+            "lon": "94.21666744"
+        },    {
+            "name": "Mumbai",
+            "state": "Bihar",
+            "lat": "25.78541445",
+            "lon": "87.4799727"
+        },    {
+            "name": "Mumbai",
+            "state": "Chandigarh",
+            "lat": "30.71999697",
+            "lon": "76.78000565"
+        },    {
+            "name": "Mumbai",
+            "state": "Chhattisgarh",
+            "lat": "22.09042035",
+            "lon": "82.15998734"
+        },    {
+            "name": "Mumbai",
+            "state": "Dadra and Nagar Haveli and Daman and Diu",
+            "lat": "20.26657819",
+            "lon": "73.0166178"
+        },    {
+            "name": "Mumbai",
+            "state": "Delhi",
+            "lat": "28.6699929",
+            "lon": "77.23000403"
+        },    {
+            "name": "Mumbai",
+            "state": "Goa",
+            "lat": "15.491997",
+            "lon": "73.81800065"
+        },    {
+            "name": "Mumbai",
+            "state": "Gujarat",
+            "lat": "22.2587",
+            "lon": "71.1924"
+        },    {
+            "name": "Mumbai",
+            "state": "Haryana",
+            "lat": "28.45000633",
+            "lon": "77.01999101"
+        },    {
+            "name": "Mumbai",
+            "state": "Himachal Pradesh",
+            "lat": "31.10002545",
+            "lon": "77.16659704"
+        },    {
+            "name": "Mumbai",
+            "state": "Jammu and Kashmir",
+            "lat": "34.29995933",
+            "lon": "74.46665849"
+        },    {
+            "name": "Mumbai",
+            "state": "Jharkhand",
+            "lat": "23.80039349",
+            "lon": "86.41998572"
+        },    {
+            "name": "Mumbai",
+            "state": "Karnataka",
+            "lat": "12.57038129",
+            "lon": "76.91999711"
+        },    {
+            "name": "Mumbai",
+            "state": "Kerala",
+            "lat": "8.900372741",
+            "lon": "76.56999263"
+        },    {
+            "name": "Mumbai",
+            "state": "Ladakh",
+            "lat": "34.2268",
+            "lon": "77.5619"
+        },    {
+            "name": "Mumbai",
+            "state": "Lakshadweep",
+            "lat": "10.56257331",
+            "lon": "72.63686717"
+        },    {
+            "name": "Mumbai",
+            "state": "Madhya Pradesh",
+            "lat": "21.30039105",
+            "lon": "76.13001949"
+        },    {
+            "name": "Mumbai",
+            "state": "Maharashtra",
+            "lat": "18.975",
+            "lon": "72.825833"
+        },    {
+            "name": "Mumbai",
+            "state": "Manipur",
+            "lat": "24.79997072",
+            "lon": "93.95001705"
+        },    {
+            "name": "Mumbai",
+            "state": "Meghalaya",
+            "lat": "25.57049217",
+            "lon": "91.8800142"
+        },    {
+            "name": "Mumbai",
+            "state": "Mizoram",
+            "lat": "23.71039899",
+            "lon": "92.72001461"
+        },    {
+            "name": "Mumbai",
+            "state": "Nagaland",
+            "lat": "25.6669979",
+            "lon": "94.11657019"
+        },    {
+            "name": "Mumbai",
+            "state": "Odisha",
+            "lat": "19.82042971",
+            "lon": "85.90001746"
+        },    {
+            "name": "Mumbai",
+            "state": "Puducherry",
+            "lat": "11.93499371",
+            "lon": "79.83000037"
+        },    {
+            "name": "Mumbai",
+            "state": "Punjab",
+            "lat": "31.51997398",
+            "lon": "75.98000281"
+        },    {
+            "name": "Mumbai",
+            "state": "Rajasthan",
+            "lat": "26.44999921",
+            "lon": "74.63998124"
+        },    {
+            "name": "Mumbai",
+            "state": "Sikkim",
+            "lat": "27.3333303",
+            "lon": "88.6166475"
+        },    {
+            "name": "Mumbai",
+            "state": "Sikkim",
+            "lat": "27.3333303",
+            "lon": "88.6166475"
+        },   {
+            "name": "Mumbai",
+            "state": "Tamil Nadu",
+            "lat": "12.92038576",
+            "lon": "79.15004187"
+        },    {
+            "name": "Mumbai",
+            "state": "Telangana",
+            "lat": "18.1124",
+            "lon": "79.0193"
+        },    {
+            "name": "Mumbai",
+            "state": "Tripura",
+            "lat": "23.83540428",
+            "lon": "91.27999914"
+        },    {
+            "name": "Mumbai",
+            "state": "Uttar Pradesh",
+            "lat": "27.59998069",
+            "lon": "78.05000565"
+        },    {
+            "name": "Mumbai",
+            "state": "Uttarakhand",
+            "lat": "30.32040895",
+            "lon": "78.05000565"
+        }
+        ,    {
+            "name": "Mumbai",
+            "state": "West Bengal",
+            "lat": "22.58039044",
+            "lon": "88.32994665"
+        }
+        
+    ]
+}

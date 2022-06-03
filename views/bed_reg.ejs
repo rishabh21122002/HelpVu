@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pateint Bed Registration | HelpVu</title>
+    <link rel="stylesheet" href="../css/bed_reg.css">
+</head>
+
+<body>
+    <div class="regform">
+        <h1> Patient bed Registration Form </h1>
+    </div>
+    <div class="main">
+        <form action="/bed_allotment" method="POST">
+            <div id="name">
+                <h2 class="name">Name</h2>
+                <input class="butt" name="name" type="text" placeholder=""><br>
+            </div>
+
+            <h2 class="name">Mobile NO </h2>
+            <input class="number" name="num" type="tel" placeholder="">
+
+            <h2 class="name">Email</h2>
+            <input class="email" type="email" name="email">
+
+            <h2 class="name">Address</h2>
+            <input class="address" type="text" name="address">
+
+            <h2 class="name">CovidReport</h2>
+            <input class="report" type="file" name="file" id="img">
+
+            <button>SUBMIT</button>
+        </form>
+    </div>
+    <footer>
+        <a href="/user/logout"><button class="log_out">log out</button></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | HelpVu</title>
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../img/img10.png" alt="heopVu">
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/status" target="_self">Status</a></li>
+            <li><a href="/news" target="_self">News</a></li>
+            <li><a href="/about" target="_self">About Us</a></li>
+            <li><a href="/contact" target="_self">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Help Us to Improve</p>
+        <form class="form" action="/contact" method="POST">
+            <div class="box">
+                <input type="text" placeholder="Enter your Name" id="name">
+            </div>
+            <div class="box">
+                <input type="email" placeholder="Enter your E-Mail" id="email">
+            </div>
+            <div class="box"><input type="text" name="msg" id="msg" placeholder="Enter your Message">
+            </div>
+            <input type="submit" class="btn" id="btn"><br>
+        </form>
+    </div>
+</body>
+
+</html>

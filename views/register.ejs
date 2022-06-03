@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7c21f95028.js" crossorigin="anonymous"></script>
+    <title>User SignUp | HelpVu</title>
+    <link rel="stylesheet" href="../css/users.css">
+</head>
+<body >
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../img/img10.png" alt="heopVu">
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/status" target="_self">Status</a></li>
+            <li><a href="/news" target="_self">News</a></li>
+            <li><a href="/about" target="_self">About Us</a></li>
+            <li><a href="/contact" target="_self">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Sign Up </h1>
+        <form action="../user/register" method="post">
+            <% if(typeof err != 'undefined') { %>
+                <%    err.forEach(function(error){ %>
+                <p id="err"> <%= error.msg %></p>
+                <%    })        %>
+                <% } %>
+            <div class="box">
+                <i class="fa fa-user"></i>
+                <input type="name" name="name" value="<%= typeof name != 'undefined' ? name : '' %>" id="name" placeholder="Enter Your Full Name" required>
+            </div>
+        <div class="box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email" value="<%= typeof email != 'undefined' ? email : '' %>" id="email" placeholder="Enter Your Email" required>
+        </div>
+        <div class="box">
+            <i class="fa fa-mobile"></i>
+            <input type="tel" name="num" value="<%= typeof num != 'undefined' ? num : '' %>" id="number" placeholder="Enter Your Phone Number" required>
+        </div>
+        <div class="box">
+            <i class="fa fa-key"></i>
+            <input type="password" name="password" id="password" placeholder="Enter Your Password" required>
+        </div>
+        <div class="box">
+            <i class="fa fa-key"></i>
+            <input type="password" name="password2" id="password" placeholder="Confirm Your Password" required>
+        </div>
+        <button class="btn">Register</button>
+    </form>
+    <div class ='box last'>Already have an account <a href="../user/login"><button class="login_button">login</button></a>
+</div></div>
+</body>
+</html>

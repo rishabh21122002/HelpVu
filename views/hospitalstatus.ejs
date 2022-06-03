@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Status | HelpVu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color:black;
+        }
+
+        form {
+
+            padding-top: 13px;
+    margin-left: 190px;
+        }
+
+        input {
+            padding: 4px 10px;
+            border: 0;
+            font-size: 16px;
+        }
+
+        .search {
+            width: 75%;
+        }
+
+        .submit {
+            width: 70px;
+            background-color: #1c87c9;
+            color: #ffffff;
+        }
+
+        .a {
+            background-image: url('../img/img15.webp');
+            height: 800px;
+            width: 100%;
+            background-size: 1366px 768px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        .b {
+            display:flex;
+            flex-direction: row;
+            height: 360px;
+            width: 677px;
+            margin : 10px 104px;
+            padding: 10px 50px;
+            /* border: 2px solid white; */
+            border-radius: 30px;
+            position: relative;
+            left: 15px;
+            top: 50px;
+        }
+
+        * {
+            font-size: 16px;
+
+        }
+
+        .d {
+           
+            background-color: rgb(20, 14, 14);
+            text-align: center;
+            font-size: 10px;
+            color: rgb(36, 32, 32);
+            width: 677px;
+        }
+        #navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#logo{
+    margin: 2px 2px;
+    padding: 2px 2px;
+}
+
+#logo img{
+    margin: 10px 2px;
+    padding: 2px 2px;
+    height: 50px;
+    width: 50px;
+}
+
+#navbar ul{
+    display: flex;
+    margin: 10px 28px;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a{
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 2px 12px;
+    padding: 2px 18px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color :white;
+}
+.status{
+    margin-top: 10px;
+    
+}
+.table{
+    border:4px solid black;
+    margin:10px;
+    border-radius: 12px;
+    font-weight: bolder;
+    color: blueviolet;
+}
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../img/img10.png" alt="heopVu">
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/status" target="_self">Status</a></li>
+            <li><a href="/news" target="_self">News</a></li>
+            <li><a href="/about" target="_self">About Us</a></li>
+            <li><a href="/contact" target="_self">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="a">
+        <form action="/search" method="POST">
+            <input type="text" name="text" class="search" placeholder="Hospital Name or ID!">
+            <input type="submit" name="submit" class="submit" value="Search">
+        </form>
+        <h1 class="status" style="text-align: center; "> HOSPITAL STATUS</h1>
+        <div class="b">
+            <% if(data.length < 1){ %>
+               <p style="font-size: 2rem;"> Sorry, nothing to show :( </p>
+            <% }%>
+            
+            <% data.forEach(function(info){ %>
+            <table class="table">
+                <thead>
+                </thead>
+                <tbody class="block" style="color: black;">
+
+                        <tr>
+                            <th scope="row" class="despo">1</th>
+                            <td class="despo">Name:</td>
+                        <td class="despo"><%= info.name %></td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row" class="despo">2</th>
+                        <td class="despo">Hospital ID:</td>
+                        <td class="despo"> <%= info.id %></td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row" class="despo">3</th>
+                        <td class="despo">No. of Vacant Beds:</td>
+                        <td class="despo"><%= info.beds_vacant %></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="despo">4</th>
+                        <td class="despo">No. of Emergency Vacant Beds:</td>
+                        <td class="despo"><%= info.em_beds_vacant %></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="despo">5</th>
+                        <td class="despo">CoVid-19 Testing:</td>
+                        <td class="despo"><%= info.covid_test %></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="despo">6</th>
+                        <td class="despo">Vaccination available:</td>
+                        <td class="despo"><%= info.vaccination %></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="despo">7</th>
+                        <td class="despo">Contact Number:</td>
+                        <td class="despo"><%= info.tel %></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="despo">8</th>
+                        <td class="despo">Hospital Adress:</td>
+                        <td class="despo"><%= info.address %></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <% }) %>
+        </div>
+    </div>
+    <footer class="d">
+        <h1 style="font-size: 30px; color:azure;"> &copy @SERVER_MONKS </h1>
+        <h2 style="font-size: 20px; color: red;">LOCATION: INDIA</h2>
+    </footer>
+</body>
+
+</html>

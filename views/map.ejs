@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='../css/map.css' rel='stylesheet' />
+    <title>Map | HelpVu</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../img/img10.png" alt="heopVu">
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/status" target="_self">Status</a></li>
+            <li><a href="/news" target="_self">News</a></li>
+            <li><a href="/about" target="_self">About Us</a></li>
+            <li><a href="/contact" target="_self">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div id='map' style='width: 100vw; height: 100vh;'></div>
+
+</body>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiamFpMTEyMjMzIiwiYSI6ImNrb3Brc3ZzNzBpcnAyd3IzNmsxZ29ibnQifQ.PsEGZ5XzNEBjpG5ZE7tO4A';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        center: [78.6569, 22.9734],
+        zoom: 3
+    });
+</script>
+
+<script src="../js/map.js"></script>
+</html>

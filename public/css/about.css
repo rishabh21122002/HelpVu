@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+.a {
+    border-radius: 35px;
+padding: 3rem;
+height: 80.5vh;
+width: 65%;
+top: 2rem;
+border: 7px solid #1398e0;
+text-align: center;
+position: relative;
+right: -28rem;
+background: #0b2a82;
+opacity: 0.6;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'KoHo', sans-serif;
+    background-image: url('../img/15.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p {
+    color: seashell;
+padding: 2rem;
+font-size: 1.2rem;
+}
+
+.d {
+    
+    position: relative;
+   top: 6rem;
+    background-color: rgb(20, 14, 14);
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    width: 100%;
+}
+h2{
+    font-size: 3rem;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#logo{
+    margin: 2px 2px;
+    padding: 2px 2px;
+}
+
+#logo img{
+    margin: 10px 2px;
+    padding: 2px 2px;
+    height: 50px;
+    width: 50px;
+}
+
+#navbar ul{
+    display: flex;
+    margin: 10px 28px;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a{
+    background-color: rgba(119, 203, 241, 0.349);
+    font-family: 'Balsamiq Sans', cursive;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 2px 14px;
+    padding: 2px 18px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color :white;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bed Allotment | HelpVu</title>
+    <link href='../css/bed_allotment.css' rel='stylesheet' />
+</head>
+<body>
+    <main>
+        <div class="heading"><h2>Your allotted Bed:</h2></div>
+        <div class="body"><pre>
+            <p class = "bed_detail">Your bed is confirmed</p >
+            <p class = "bed_detail">Hospital name = <%= info.name %></p>
+            <p class = "bed_detail">Hospital id = <%= info.id %></p >
+            <p class = "bed_detail">Hospital number = 5646498465</p></pre>
+            <p class = "bed_detail"><div>
+                <span class = "bed_detail" class="address">Hospital address = <%= info.address %> </span></div>
+                </div>
+            </p>
+            <p class = "bed_detail" id="asap" >APPROCH HOSPITAL AS SOON AS POSSIBLE</p>
+        </pre>
+        </div>
+        <footer>
+            <aside class="ambulance">for ambulance service or futher detail contact hospital with your registered mobile number.</aside>
+            <a href="/user/logout"><button class="log_out">log out</button></a>
+        </footer>
+    </main>
+</body>
+</html>

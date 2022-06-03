@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HelpVu</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="../img/img10.png" alt="heopVu">
+            </div>
+    
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/status" target="_self">Status</a></li>
+                <li><a href="/news" target="_self">News</a></li>
+                <li><a href="/about" target="_self">About Us</a></li>
+                <li><a href="/contact" target="_self">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- <div class="b">
+
+            <span>
+                <img src="../img/img10.png" alt="logo">
+
+            </span>
+            <span class="helpvu">
+                <p>helpVu</p>
+            </span>
+        </div>
+        <div class="a">
+            <nav>
+                <ul>
+                    <a href="/" target="_self">
+                        <li class="e">Home</li>
+                    </a>
+                    <a href="/status">
+                        <li class="e">Status</li>
+                    </a>
+                    <a href="#">
+                        <li class="e">News</li>
+                    </a>
+                    <!-- <a href="#">
+                        <li class="e">Helpline</li>
+                    </a> -->
+                   <!-- <a href="/about">
+                        <li class="e">About us</li>
+                    </a>
+                    <a href="/contact">
+                        <li class="e">Contacts us</li>
+                    </a>
+                    <a href="map" target="_self"><button class="z">LIVE CASES ON MAP</button>
+                </ul></a>
+
+            </nav>
+        </div> -->
+        <div class="c">
+            <div class="f">
+                <h1 class="help">HelpVu</h1>
+                <p>Web-based service portal (named 'HelpVu') to provide help and Corona treatment facilities.
+                    We're aiming to decentralize the whole process of bed registration and oxygen supply in hospitals so
+                    that everyone can get treatment and many more things through this project. Our portal users can
+                    check the status of beds, number of corona patients(presently), recovered patients, empty beds,
+                    oxygen reservoir, and ability to book bed for themselves after showing the test report. There are
+                    also news and blog sections where users can find helpful information related to corona and also
+                    register themselves for vaccination. In contrast, the hospital portal allows the various hospitals
+                    to update their info about the patients, beds, and oxygen reserves and an SOS button if they felt
+                    short of oxygen which immediately sends a request to various concerned authorities through tweets
+                    and emails. </p>
+            </div>
+
+            <div class="g">
+                <h2>LOGIN</h2>
+
+                <a href="user/login" target="_self"><button>For Patient</button></a> <br>
+                <a href="hospital/login"><button>For Hospital</button></a>
+
+                <h4>If you're new to the site, please Sign Up</h4>
+                <a href="user/register" target="_self"><button>For Patient</button></a>
+            </div>
+
+        </div>
+        <div class="h">
+            <div class="i">
+
+
+
+
+                <table>
+
+
+
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="stateini">Covid-19 Dashboard
+                                <hr>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Confirmed</td>
+                            <td id="condas"></td>
+                        </tr>
+                        <tr>
+                            <td>Active</td>
+                            <td id="actdas"></td>
+                        </tr>
+                        <tr>
+                            <td>Recovered</td>
+                            <td id="actrec"></td>
+                        </tr>
+                        <tr>
+                            <td>Death</td>
+                            <td id="deadas"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+                <a href="map" target="_self"> <button class="z">LIVE CASES ON MAP</button></a>
+
+            </div>
+        </div>
+        <div class="frame_container">
+            <div class="frame">
+                <iframe src="/map" class="iframe" id="map" scrolling="no"></iframe></a>
+                <iframe src="/news" class="iframe" id="news" scrolling="no"></iframe></a>
+             <iframe src="/status" class="iframe" id="status" scrolling="no"></iframe></a>
+            </div>
+             <div class="toclick">
+                 <spam id="map_page"><a class="_page" href="/map">click here</a> to visit page MAP</spam>
+                 <spam id="news_page"><a class="_page" href="/news">click here</a> to visit page NEWS</spam>
+                <spam id="status_page"><a class="_page" href="/status">click here</a> to visit page STATUS</spam>
+             </div>
+        </div>
+        <div class="j">
+            <div class="k">
+                <h1>IMPORTANT UPDATES</h1>
+                <hr>
+                <h3>CoVid-19 vaccination : Appointment Scheduling</h3>
+                <h3>CoVid-19 Test Result</h3>
+                <h3>CoVid-19 Testing Laboratories Reporting to ICMR</h3>
+            </div>
+            <div class="l">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="stateini">Statewise Covid-19 Dashboard
+                                <hr>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>UP</td>
+                            <td id="up"></td>
+                        </tr>
+                        <tr>
+                            <td>Goa</td>
+                            <td id="goa"></td>
+                        </tr>
+                        <tr>
+                            <td>Madhya Pradesh</td>
+                            <td id="mp">4000</td>
+                        </tr>
+                        <tr>
+                            <td>Haryana</td>
+                            <td id="haryana"></td>
+                        </tr>
+                        <tr>
+                            <td>Delhi</td>
+                            <td id="delhi"></td>
+                        </tr>
+                        <!-- <tr>
+                            <td>J&K</td>
+                            <td id="jandk"></td>
+                        </tr>-->
+                        <tr>
+                            <td>West Bengal</td>
+                            <td id="bengal"></td>
+                        </tr>
+                        <tr>
+                            <td>Karnataka</td>
+                            <td id="karnataka"></td>
+                        </tr>
+                        <tr>
+                            <td>Maharastra</td>
+                            <td id="mumbai"></td>
+                        </tr>
+                        <tr>
+                            <td id="state">For more</td>
+                            <td><a href="https://corona.help/country/india" target="_blank">click here</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="m">
+                <h1 class="stateini">State Initiatives</h1>
+                <hr>
+                <a href="http://covidassam.in/" target="_blank" ><h3>CoVid-19 Test Results</h3></a> 
+                <hr>
+                <a href="http://covidassam.in/" target="_blank" > <h3>Volunteer Registration</h3></a> 
+                <hr>
+                <a href="https://nhm.assam.gov.in/portlet-innerpage/reporting-of-covid-19-cases" target="_blank" ><h3>Reporting Of Cases</h3></a> 
+                <hr>
+                <a href="https://covid19.assam.gov.in/wp-content/uploads/2020/05/ZSC-Discharge-Board.pdf" target="_blank" ><h3>ZSC Discharge Boards</h3></a> 
+                <hr>
+                <a href="https://nhm.assam.gov.in/portlet-innerpage/dedicated-covid-hospitals" target="_blank" ><h3>Dedicated Covid-19 Hospitals</h3></a> 
+                <hr>
+                <a href=":https://covid19.assam.gov.in/all-links/" target="_blank"><h3>IMPORTANT LINKS</h3>
+                <hr></a>
+
+
+            </div>
+        </div>
+        
+        <div class="n">
+            <h1 style="font-size: 50px;">IMPORTANT LINKS</h1>
+            <hr>
+            <div class="o">
+                <a href="" target="_blank">
+                    <li class="links">District Initiatives</li>
+                </a>
+                <a href="https://www.mohfw.gov.in/" target="_blank">
+                    <li class="links">Government of India</li>
+                </a>
+                <a href="https://www.pmcares.gov.in/en/web/contribution/donate_india" target="_blank">
+                    <li class="links">Make a Donation</li>
+                </a>
+                <a href="https://covid19.assam.gov.in/training/" target="_blank">
+                    <li class="links">Procedure and Training</li>
+                </a>
+                <a href="https://www.mygov.in/task/join-war-against-covid-19-register-volunteer/" target="_blank">
+                    <li class="links">Volunteer Registration</li>
+                </a>
+                <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
+                    target="_blank">
+                    <li class="links">WHO Advisories</li>
+                </a>
+            </div>
+        </div>
+        <div class="q">
+
+        </div>
+        <div class="p">
+            <h2>ABOUT CoVid-19</h2>
+            <P>Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more
+                severe diseases such as Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory
+                Syndrome (SARS-CoV). A novel coronavirus (nCoV) is a new strain that has not been previously identified
+                in humans.
+
+                Coronaviruses are zoonotic, meaning they are transmitted between animals and people. Detailed
+                investigations found that SARS-CoV was transmitted from civet cats to humans and MERS-CoV from dromedary
+                camels to humans. Several known coronaviruses are circulating in animals that have not yet infected
+                humans.
+
+                Common signs of infection include respiratory symptoms, fever, cough, shortness of breath and breathing
+                difficulties. In more severe cases, infection can cause pneumonia, severe acute respiratory syndrome,
+                kidney failure and even death.
+
+                Standard recommendations to prevent infection spread include regular hand washing, covering mouth and
+                nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact with anyone
+                showing symptoms of respiratory illness such as coughing and sneezing.</P>
+        </div>
+
+
+    </header>
+    <footer class="foot">
+        COPYRIGHT &copy @SERVER_MONKS <br> LOCATION: INDIA
+    </footer>
+</body>
+<script src="../js/home.js"></script>
+
+</html>

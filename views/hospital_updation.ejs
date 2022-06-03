@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Updation | HelpVu</title>
+    <link rel="stylesheet" href="../css/hos_updation.css">
+</head>
+<body>
+     <div class="regform"><h1> HOSPITAL (Please Update Your INFO) </h1></div>
+     <div class="main">
+         <% data.forEach(function(info){ %>
+            <form action="/updation/<%=info.name %>" method="POST">
+                <h2 style="text-align: center;">Welcome <%=info.name %> </h2>
+             <div id="name">
+                 <h2 class="name">No. Of Beds Present:</h2>
+                 <input class="beds" type="text" name="beds_present" placeholder="" value="<%= info.beds_present %>">
+             </div>
+
+             <h2 class="name">No. Of Vacant Beds Available: </h2>
+             <input class="vacant" type="text" name="beds_vacant" value="<%= info.beds_vacant %>">
+
+             <h2 class="name">No. Of Emergency Bed Available:</h2>
+             <input class="emer" type="text" name="em_beds_present" value="<%= info.em_beds_present %>">
+
+             <h2 class="name">Vacant Emergency Bed Available:</h2>
+             <input class="emervacant" type="text" name="em_beds_vacant" value="<%= info.em_beds_vacant %>">
+
+            <h2 class="name">Corona Testing Available:</h2>
+            <label for="coronatestidY" class="radio">
+                 <input class="upto" type="radio" value="Yes" name="covid_test" id="coronatestidY"> Yes
+             </label>
+             <label for="coronatestN" class="radio">
+                 <input class= "upto" type="radio" value="No" name="covid_test" id="coronatestidN"> No
+             </label>
+
+             <h2 class="name">Amoung Of Oxygen Required (daily in litres):</h2>
+             <input class="amoung" type="text" name="oxygen_req" value="<%= info.oxygen_req %>">
+
+             <h2 class="name">Amoung Of Oxygen Get (today in litres):</h2>
+             <input class="amoungoxy" type="text" name="oxygen_av" value="<%= info.oxygen_av %>">
+
+             <button>SUBMIT</button>
+             <% }) %>
+         </form>
+     </div>
+</body>
+</html>

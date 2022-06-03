@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7c21f95028.js" crossorigin="anonymous"></script>
+    <title>User Login | HelpVu</title>
+    <link rel="stylesheet" href="../css/users.css">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../img/img10.png" alt="heopVu">
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/status" target="_self">Status</a></li>
+            <li><a href="/news" target="_self">News</a></li>
+            <li><a href="/about" target="_self">About Us</a></li>
+            <li><a href="/contact" target="_self">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Log In</h1>
+        <form action="../user/login" method="post">
+            <% if(success_msg!= '') { %>
+                <p><%=success_msg %> </p>
+                <% } %>
+            <div class="box">
+                <i class="fa fa-mobile"></i>
+                <input type="tel" name="num" id="number" placeholder="Enter Your Phone Number" required>
+            </div>
+            <div class="box">
+                <i class="fa fa-key"></i>
+                <input type="password" name="password" id="password" placeholder="Enter Your Password" required>
+            </div>
+            <button class="btn">Log In</button>
+        </form>
+        <div class ='box last'>Don't have an account? <a href="../user/register"><button class="login_button" id="sign_up">Sign Up</button></a>
+    </div>
+</body>
+
+</html>

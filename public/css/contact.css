@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'KoHo', sans-serif;
+    background: url(../img/21.jpg) center center no-repeat;
+    /* background-size: cover; */
+    color: white;
+}
+
+.container {
+    border-radius: 22px;
+    z-index: -1;
+    opacity: 0.6;
+    background: #06066b;
+    text-align: center;
+    width: 42%;
+    height: 81vh;
+    color: white;
+    border: 7px solid #0c96d2;
+    position: absolute;
+    top: 11%;
+    left: 24%;
+
+}
+
+.container h1 {
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    position: relative;
+    top: 17px;
+    width: 50%;
+    display: inline-block;
+    font-size: 50px;
+    /* border-bottom: 5px solid purple; */
+    margin-bottom: 12px;
+    padding: 12px 39px;
+}
+
+.box {
+    width: 76%;
+    /* margin: auto; */
+    margin: 42px 60px;
+    position: relative;
+    left: 2rem;
+    border-bottom: 3px solid rgb(15, 161, 197);
+}
+
+.box input {
+    font-family: 'KoHo', sans-serif;
+    color: #ffffff;
+    background: none;
+    width: 99%;
+    padding: 11px 8px;
+    font-size: 22px;
+    border: none;
+    outline: none;
+}
+
+
+.btn {
+    font-family: 'KoHo', sans-serif;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    margin: 12px 0;
+    padding: 10px 21px;
+    border: 2px solid rgb(6, 210, 236);
+    border-radius: 10px;
+    font-size: 14px;
+    background: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    opacity: 0.5;
+    color: rgb(7, 117, 180);
+    background: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.form {
+    margin: 100px 2px;
+}
+
+::placeholder {
+    /* font-weight: bold; */
+    color: rgb(235, 231, 231);
+    opacity: 1;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#logo{
+    margin: 2px 2px;
+    padding: 2px 2px;
+}
+
+#logo img{
+    margin: 10px 2px;
+    padding: 2px 2px;
+    height: 50px;
+    width: 50px;
+}
+
+#navbar ul{
+    display: flex;
+    margin: 10px 28px;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a{
+    background-color: rgba(119, 203, 241, 0.349);
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 2px 14px;
+    padding: 2px 18px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color :white;
+}
